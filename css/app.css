@@ -101,22 +101,37 @@ html {
 .bg .loding .make .lad1-1 {
   width: 7.0441989vh;
   height: 8.28729282vh;
+  opacity: 0;
+  transition: all;
+  animation: dn 1s 1s forwards;
 }
 .bg .loding .make .lad1-2 {
   width: 5.93922652vh;
   height: 9.39226519vh;
+  opacity: 0;
+  transition: all;
+  animation: dn 1s 2s forwards;
 }
 .bg .loding .make .lad1-3 {
   width: 7.66574586vh;
   height: 10.08287293vh;
+  opacity: 0;
+  transition: all;
+  animation: dn 1s 3s forwards;
 }
 .bg .loding .make .lad1-4 {
   width: 7.45856354vh;
   height: 8.97790055vh;
+  opacity: 0;
+  transition: all;
+  animation: dn 1s 4s forwards;
 }
 .bg .loding .make .lad1-5 {
   width: 4.35082873vh;
   height: 9.04696133vh;
+  opacity: 0;
+  transition: all;
+  animation: dn 1s 5s forwards;
 }
 .bg .loding .wire {
   width: 100%;
@@ -131,7 +146,7 @@ html {
   width: 100%;
   height: 0.13812155vh;
   background-color: #000;
-  animation: move 3s ;
+  animation: move 8s ;
 }
 .bg .loding .lad3 {
   width: 5.87016575vh;
@@ -225,6 +240,8 @@ html {
   position: absolute;
   left: 50%;
   margin-left: -2.0718232vh;
+  transition: all;
+  animation: around 3s infinite;
 }
 .fitler {
   filter: blur(1px);
@@ -250,7 +267,7 @@ html {
     transform: scale(0.5);
   }
   100% {
-    transform: scale(0.7);
+    transform: scale(0.6);
   }
 }
 @keyframes move {
@@ -259,5 +276,38 @@ html {
   }
   100% {
     width: 100%;
+  }
+}
+@keyframes dn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes around {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
   }
 }
