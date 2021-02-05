@@ -1,0 +1,263 @@
+.dn {
+  display: none;
+}
+img {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  vertical-align: middle;
+}
+input,
+select {
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+div {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+img[src=""] {
+  display: none;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+/*====== 建议body给稿子底色背景 ==============*/
+body,
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+::-webkit-input-placeholder {
+  color: #411275;
+}
+.pg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.bg {
+  width: 100vh;
+  height: 100vw;
+  transform: translate(-50%, -50%) rotate(90deg);
+  position: relative;
+  left: 50%;
+  top: 50%;
+}
+.bg .loding {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.bg .loding .lad-bg {
+  width: 100%;
+  height: 100%;
+}
+.bg .loding .lad {
+  width: 10.35911602vh;
+  height: 15.46961326vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.3308011vh;
+  top: 8.28729282vh;
+}
+.bg .loding .lad .lad-1 {
+  width: 6.69889503vh;
+  height: 15.46961326vh;
+  position: absolute;
+  left: 0vh;
+  top: 0vh;
+}
+.bg .loding .lad .lad-2 {
+  left: 6.90607735vh;
+  position: absolute;
+  top: 50%;
+  margin-top: -3.72928177vh;
+  width: 2.62430939vh;
+  height: 7.45856354vh;
+}
+.bg .loding .make {
+  width: 35.91160221vh;
+  height: 10.08287293vh;
+  left: 50%;
+  margin-left: -17.9558011vh;
+  position: absolute;
+  top: 50%;
+  margin-top: 0vh;
+}
+.bg .loding .make .lad1-1 {
+  width: 7.0441989vh;
+  height: 8.28729282vh;
+}
+.bg .loding .make .lad1-2 {
+  width: 5.93922652vh;
+  height: 9.39226519vh;
+}
+.bg .loding .make .lad1-3 {
+  width: 7.66574586vh;
+  height: 10.08287293vh;
+}
+.bg .loding .make .lad1-4 {
+  width: 7.45856354vh;
+  height: 8.97790055vh;
+}
+.bg .loding .make .lad1-5 {
+  width: 4.35082873vh;
+  height: 9.04696133vh;
+}
+.bg .loding .wire {
+  width: 100%;
+  height: 0.13812155vh;
+  background-color: #fff;
+  position: absolute;
+  left: 0vh;
+  top: 42.81767956vh;
+  z-index: 2;
+}
+.bg .loding .wire .move {
+  width: 100%;
+  height: 0.13812155vh;
+  background-color: #000;
+  animation: move 3s ;
+}
+.bg .loding .lad3 {
+  width: 5.87016575vh;
+  height: 6.21546961vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.93508287vh;
+  top: 44.88950276vh;
+}
+.bg .loding .lad3 .lad-3 {
+  width: 5.87016575vh;
+  height: 6.21546961vh;
+}
+.bg1 {
+  width: 100vh;
+  height: 100vw;
+  transform: translate(-50%, -50%) rotate(90deg);
+  position: relative;
+  left: 50%;
+  top: 50%;
+}
+.bg1 .p1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.bg1 .p1 .p1-bg {
+  width: 100%;
+  height: 100%;
+}
+.bg1 .p1 .panama {
+  width: 22.85911602vh;
+  height: 2.62430939vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -11.42955801vh;
+  top: 4.14364641vh;
+}
+.bg1 .p1 .panama .p1-1 {
+  width: 22.85911602vh;
+  height: 2.62430939vh;
+}
+.bg1 .p1 .bottle {
+  width: 15.53867403vh;
+  height: 18.64640884vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -6.56077348vh;
+  top: 17.26519337vh;
+  z-index: 3;
+}
+.bg1 .p1 .bottle .p1-2 {
+  width: 15.53867403vh;
+  height: 18.64640884vh;
+  transform: scale(0.5);
+  z-index: 3;
+}
+.bg1 .p1 .desk {
+  width: 28.17679558vh;
+  height: 39.22651934vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -12.77624309vh;
+  top: 22.79005525vh;
+}
+.bg1 .p1 .desk .p1-3 {
+  width: 28.17679558vh;
+  height: 39.22651934vh;
+  transform: scale(0.6);
+}
+.bg1 .p1 .wobble {
+  width: 17.33425414vh;
+  height: 13.74309392vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -8.66712707vh;
+  top: 10.35911602vh;
+}
+.bg1 .p1 .wobble .p1-4 {
+  width: 17.33425414vh;
+  height: 8.49447514vh;
+  position: absolute;
+  left: 0vh;
+  top: 0vh;
+}
+.bg1 .p1 .wobble .p1-4-1 {
+  width: 5.24861878vh;
+  height: 5.24861878vh;
+  top: 50%;
+  margin-top: -3.45303867vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.0718232vh;
+}
+.fitler {
+  filter: blur(1px);
+}
+.zoom {
+  transition: all;
+  animation: zoom 3s forwards;
+}
+.zoom1 {
+  transition: all;
+  animation: zoom1 2s forwards;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.4);
+  }
+}
+@keyframes zoom1 {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+@keyframes move {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
