@@ -90,15 +90,19 @@ window.addEventListener('load', function () {
 
     // 开始制作
     //大盒子
-    var four=document.querySelector('.four');
+    var four = document.querySelector('.four');
     // 谷堆
     var p39 = document.querySelector('.p3-9');
     // 进度条
     var p34 = document.querySelector('.p3-4'), p35 = document.querySelector('.p3-5');
     // 要点击的手
-    var p381 = document.querySelector('.p3-3-1');
+    var p381 = document.querySelector('.p3-8-1');
+    // 要显示的图片
+    var p318 = document.querySelector('.p3-18');
     // 隐藏的手
     var p38 = document.querySelector('.p3-8');
+    // 隐藏的箭头
+    var p37 = document.querySelector('.p3-7');
     // 要隐藏的图片
     var p36 = document.querySelector('.p3-6');
     // 要切换的图片
@@ -109,48 +113,95 @@ window.addEventListener('load', function () {
     var p33 = document.querySelector('.p3-3'), p331 = document.querySelector('.p3-3-1');
     // 下一步
     var sizing = document.querySelector('.sizing');
-    // window.addEventListener('touchstart',function(e){
-    //     console.log(e.targetTouches[0].pageX);
-    //     console.log(p39.offsetWidth);
-    // })
-    // 鼠标开始的位置
-    var startX=0,startY=0;
-    // 盒子开始的距离
-    var startMouseX=0,startMouseY=0;
-    // 最大的移动距离
-    var MaxmoveY=four.offsetWidth-p39.offsetWidth;
-    var MaxmoveX=four.offsetHeight-p39.offsetHeight;
-    p39.addEventListener('touchstart',function(e){
-        p36.style.display='none';
-        p38.style.display='none';
-        startX = e.targetTouches[0].pageY; // 鼠标开始的位置
-        startY = e.targetTouches[0].pageX;
-        startMouseX=this.offsetTop;  // 盒子开始离左边的距离
-        startMouseY=this.offsetLeft;
-        
+
+
+    p39.addEventListener('click', function () {
+        p38.style.display = 'none';
+        p36.style.display = 'none';
+        p37.style.display = 'none';
+        animate(255, p39, 10, 'l');
+        var l = 0;
+        var timer3 = setInterval(function () {
+            l = p39.offsetLeft;
+            if (l == 255) {
+                p39.style.display = 'none';
+                p311.src = 'img/p3_12.png';
+                p381.classList.remove('dn');
+                p318.classList.remove('dn');
+                var num1 = 0;
+                var sum1 = 0;
+                function click() {
+
+                    // var flag = true;
+
+                    // function Raise(flag) {
+
+
+                    // }
+                    
+                    num1++;
+                    p35.style.zIndex = 2;
+                    p35.style.height=num1*25+'px';
+                    console.log(p35.offsetHeight);
+                    // Raise(flag);
+
+                    sum1 += 20;
+                    num.innerHTML = sum1;
+                    if (num1 == 0) {
+                        p318.classList.add('dn');
+                        p381.classList.add('dn');
+                        removeEventListener('click', click);
+                    }
+                }
+                window.addEventListener('click', click)
+
+                clearInterval(timer3);
+            }
+
+        }, 500);
     })
-    // four.addEventListener('touchmove',function(e){
-    //     // 鼠标移动的位置
-    //     var touchX = e.targetTouches[0].pageY+375;
-    //     var touchY= e.targetTouches[0].pageX+667;
-    //     touchX=touchX-startX+startMouseX;
-    //     touchY=touchY-startY+startMouseY;
-    //     if(touchX<0){
-    //         touchX=0;
-    //     }else if(touchX>MaxmoveX){
-    //         touchX=MaxmoveX
-    //     }
-    //     if(touchY<0){
-    //         touchY=0;
-    //     }else if(touchY>MaxmoveY){
-    //         touchY=MaxmoveY;
-    //     }
-    //     p39.style.top=touchY/(1448/100)+'vh';
-    //     p39.style.left=touchX/(1448/100)+'vh';
-    // })
+    function animate(target, obj, speed, type) {
+        // 传值进来  移动多少
+        // target  距离
+        // obj 对象   
+        // speed 速度
+        // type  方向
+        clearInterval(obj.timer);
+        obj.timer = setInterval(function () {
+            // 当移动的距离大于等于目标的值  停止
+            // if (obj.offsetLeft >= target ) {
+            //     clearInterval(obj.timer);
+            // } else {
+            if (type.toLowerCase() == 'r') {
+                if (obj.offsetLeft >= target) {
+                    clearInterval(obj.timer);
+                } else {
+                    // 每次移动的距离在原来的位置+1
+                    obj.style.left = obj.offsetLeft + 1 + 'px';
+                }
+            } else if (type.toLowerCase() == 'l') {
+                if (obj.offsetLeft <= target) {
+                    clearInterval(obj.timer);
+                } else {
+                    obj.style.left = obj.offsetLeft - 1 + 'px';
+                }
+            } else if (type.toLowerCase() == 'b') {
+                if (obj.offsetTop >= target) {
+                    clearInterval(obj.timer);
+                } else {
+                    obj.style.top = obj.offsetTop + 1 + 'px';
+                }
 
-    
+            } else if (type.toLowerCase() == 't') {
+                if (obj.offsetTop <= target) {
+                    clearInterval(obj.timer);
+                } else {
+                    obj.style.top = obj.offsetTop - 1 + 'px';
+                }
+            }
 
+        }, speed)
+    }
 });
 
 
