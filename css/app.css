@@ -956,10 +956,6 @@ html {
   width: 100%;
   height: 100%;
 }
-.bg5 .p5 .p5-1-bg {
-  width: 100%;
-  height: 100%;
-}
 .bg5 .maotai {
   width: 100%;
   height: 100%;
@@ -1050,4 +1046,174 @@ html {
 .bg5 .maotai .p5-15 img {
   width: 100%;
   height: 100%;
+}
+.bg6 {
+  width: 100vh;
+  height: 100vw;
+  transform: translate(-50%, -50%) rotate(90deg);
+  position: relative;
+  left: 50%;
+  top: 50%;
+}
+.bg6 .p6 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.bg6 .p6 .p6-bg {
+  width: 100%;
+  height: 100%;
+}
+.bg6 .p6 .p6-1-bg {
+  width: 100%;
+  height: 100%;
+}
+.bg6 .hand {
+  width: 8.28729282vh;
+  height: 8.28729282vh;
+  position: absolute;
+  left: 37.29281768vh;
+  top: 10.35911602vh;
+}
+.bg6 .hand .p63-7 {
+  width: 4.4198895vh;
+  height: 0.96685083vh;
+}
+.bg6 .hand .p63-8 {
+  width: 4.14364641vh;
+  height: 4.97237569vh;
+  position: absolute;
+  left: 2.76243094vh;
+  top: 2.0718232vh;
+}
+.bg6 .bottle {
+  width: 13.8121547vh;
+  height: 34.53038674vh;
+  top: 50%;
+  margin-top: -16.36740331vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -6.87154696vh;
+}
+.bg6 .bottle .p6-11 {
+  width: 13.74309392vh;
+  height: 32.73480663vh;
+  position: absolute;
+  left: 0vh;
+  top: 0vh;
+}
+.bg6 .bottle .p6-10 {
+  width: 5.7320442vh;
+  height: 4.55801105vh;
+  position: absolute;
+  left: 3.79834254vh;
+  top: 0vh;
+}
+.bg6 .bottle .p6-16 {
+  width: 11.74033149vh;
+  height: 30.93922652vh;
+  position: absolute;
+  left: 0vh;
+  top: 1.38121547vh;
+}
+.bg6 .open {
+  width: 12.01657459vh;
+  height: 6.49171271vh;
+  position: absolute;
+  left: 55.24861878vh;
+  top: 8.28729282vh;
+}
+.bg6 .open img {
+  width: 100%;
+  height: 100%;
+}
+.bg6 .taste {
+  width: 31.00828729vh;
+  height: 5.93922652vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -15.50414365vh;
+  bottom: 0;
+}
+.bg7 {
+  width: 100vh;
+  height: 100vw;
+  transform: translate(-50%, -50%) rotate(90deg);
+  position: relative;
+  left: 50%;
+  top: 50%;
+}
+.bg7 .p7 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.bg7 .p7 .p7-bg {
+  width: 100%;
+  height: 100%;
+}
+.bg7 .p7 .p7-11 {
+  width: 88.46685083vh;
+  height: 41.09116022vh;
+  left: 50%;
+  margin-left: -44.23342541vh;
+  position: absolute;
+  top: 50%;
+  margin-top: -20.54558011vh;
+}
+.bg7 .p7 .life {
+  width: 10.01381215vh;
+  height: 11.60220994vh;
+  position: absolute;
+  left: 8.28729282vh;
+  top: 9.66850829vh;
+}
+.bg7 .p7 .life img {
+  width: 100%;
+  height: 100%;
+}
+.bg7 .p7 .guizhou {
+  width: 6.83701657vh;
+  height: 7.25138122vh;
+  position: absolute;
+  right: 8.28729282vh;
+  top: 9.66850829vh;
+}
+.bg7 .p7 .guizhou img {
+  width: 100%;
+  height: 100%;
+}
+.bg7 .p7 .flavour {
+  width: 72.6519337vh;
+  height: 25.06906077vh;
+  left: 50%;
+  margin-left: -36.32596685vh;
+  position: absolute;
+  top: 50%;
+  margin-top: -12.53453039vh;
+}
+.bg7 .p7 .flavour .p7-2 {
+  width: 24.58563536vh;
+  height: 18.85359116vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -12.29281768vh;
+}
+.bg7 .p7 .flavour .p7-8 {
+  width: 72.6519337vh;
+  height: 25.06906077vh;
+}
+.bg7 .p7 .anew {
+  width: 28.10773481vh;
+  height: 5.93922652vh;
+  position: absolute;
+  left: 10.35911602vh;
+  bottom: 8.28729282vh;
+}
+.bg7 .p7 .watch {
+  width: 24.65469613vh;
+  height: 5.93922652vh;
+  position: absolute;
+  right: 10.35911602vh;
+  bottom: 8.28729282vh;
 }
